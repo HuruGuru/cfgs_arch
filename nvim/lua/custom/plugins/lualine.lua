@@ -14,13 +14,14 @@ return {
 			mocha = "9F86C0",
 			mocha_light = "E0B1CB",
 			fg = "#C3CCDC",
-			bg = "#231942", --112638
+			bg = "#273a4a", --112638  231942
 			inactive_bg = "#2c3043", --2c3043
+			custom = "#4e7494",
 		}
 
 		local my_lualine_theme = {
 			normal = {
-				a = { bg = colors.mocha, fg = colors.bg, gui = "bold" },
+				a = { bg = colors.custom, fg = colors.fg, gui = "bold" },
 				b = { bg = colors.bg, fg = colors.fg },
 				c = { bg = colors.bg, fg = colors.fg },
 			},
@@ -61,7 +62,7 @@ return {
 					{
 						lazy_status.updates,
 						cond = lazy_status.has_updates,
-						color = { fg = "#ff9e64" },
+						color = { fg = "#ff9e64" }, --#ff9e64
 					},
 					{ "encoding" },
 					{ "fileformat" },

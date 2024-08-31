@@ -1,0 +1,30 @@
+import = [
+    "~/.config/alacritty/themes/themes/midnight-haze.toml"
+    # midnight-haze
+]
+
+[window]
+padding = { x = 5, y = 5 }
+
+[font]
+size = 12
+
+[font.normal]
+family = "Hermit"
+style = "Regular"
+
+
+[font.bold]
+family = "Hermit"
+style = "Bold"
+
+
+[font.italic]
+family = "Hermit"
+style = "Italic"
+
+
+[font.bold_italic]
+family = "Hermit"
+style = "Bold Italic"
+
