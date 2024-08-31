@@ -4,13 +4,25 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# nnn file manager
+export NNN_OPTS="deH"
+export LC_COLLATE="C"
+export NNN_PLUG='p:preview-tui'
+export NNN_TERMINAL="alacritty --title preview-tui"
+export NNN_FIFO="/tmp/nnn.fifo"
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="lukerandall" #gnzh jnrowe juanghurtado kafeitu
-#"spaceship" 
-#"robbyrussell"
+ZSH_THEME="agnoster" #robbyrussel
+
+plugins=( 
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+)
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666699,standout"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -72,13 +84,6 @@ ZSH_THEME="lukerandall" #gnzh jnrowe juanghurtado kafeitu
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-)
-
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#663399,standout"
 
 source $ZSH/oh-my-zsh.sh
 
