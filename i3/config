@@ -11,6 +11,10 @@
 
 set $mod Mod1
 
+# keyboard
+exec "setxkbmap -layout us,ru"
+exec "setxkbmap -option 'grp:ctrl_space_toggle'"
+
 exec_always --no-startup-id picom
 exec_always feh --bg-fill --randomize ~/.local/share/walls/*
 # ~/.local/share/walls/marek-piwnicki-eYXvTTm9D9c-unsplash.jpg
