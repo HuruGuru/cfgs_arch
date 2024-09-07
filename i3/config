@@ -11,15 +11,18 @@
 
 set $mod Mod1
 
+exec_always "setxkbmap -layout us,ru"
+exec_always "setxkbmap -option 'grp:ctrl_space_toggle'"
+
 exec_always --no-startup-id picom
 exec_always feh --bg-fill --randomize ~/.local/share/walls/*
 # ~/.local/share/walls/marek-piwnicki-eYXvTTm9D9c-unsplash.jpg
 
 default_border pixel 4
 hide_edge_borders smart
-gaps inner 8
+gaps inner 10
 gaps outer 4
-exec_always "VBoxClient --clipboard"
+exec "VBoxClient --clipboard"
 
 # nnn preview
 no_focus [class="Alacritty" title="preview-tui"]
@@ -169,7 +172,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
