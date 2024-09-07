@@ -11,8 +11,12 @@
 
 set $mod Mod1
 
+# keyboard
 exec_always "setxkbmap -layout us,ru"
 exec_always "setxkbmap -option 'grp:ctrl_space_toggle'"
+
+
+
 
 exec_always --no-startup-id picom
 exec_always feh --bg-fill --randomize ~/.local/share/walls/*
