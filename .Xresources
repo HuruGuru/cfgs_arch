@@ -1,0 +1,12 @@
+*VT100*translations:      #override \n\
+    Ctrl Shift <Key>C:  copy-selection(SELECT) \n\
+    Ctrl Shift <Key>V:  insert-selection(SELECT)
+
+xterm*selectToClipboard: true
+
+xterm*faceName: Hurmit Nerd Font Mono:style=Bold:size=12
+
+! special
+*.foreground:   #c0c5ce
+*.background:   #11121D
+*.cursorColor:  #62a779
